@@ -36,5 +36,4 @@ node_modules
 *.sublime*
 
 # Temp
-public
 tmp

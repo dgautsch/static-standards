@@ -1,0 +1,59 @@
+/*----------------------------------------------*\
+    Body
+\*----------------------------------------------*/
+
+body {
+    font-size: $base-font-size;
+    font-family: $base-font-family;
+    font-weight: $font-weight-normal;
+}
+
+/*----------------------------------------------*\
+    Paragraphs
+\*----------------------------------------------*/
+
+p {
+    margin-bottom: $base-spacing-unit/1.25;
+    color: $color--secondary-text;
+    font-size: em(14px);
+    line-height: 1.6;
+}
+
+/*----------------------------------------------*\
+    Headings
+\*----------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6 {
+    color: $color--primary-text;
+    margin-bottom: 0.25em;
+}
+
+h1 {
+    font-size: $h1-font-size;
+    line-height: 1.175;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing:antialiased;
+    color: $color--primary-blue;
+}
+
+h2 {
+    font-size: $h2-font-size;
+    line-height: 1.67;
+}
+
+h3 {
+    font-size: $h3-font-size;
+    line-height: ($line-height-ratio - .25);
+}
+
+h4 {
+    font-size: $h4-font-size;
+    line-height: ($line-height-ratio - .1);
+}
+
+h5 {
+    font-size: $h5-font-size;
+    line-height: $line-height-ratio;
+}
+
+h6 { font-size: $h6-font-size; }

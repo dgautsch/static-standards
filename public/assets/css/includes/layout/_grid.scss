@@ -1,0 +1,68 @@
+/*----------------------------------------------*\
+    Container
+\*----------------------------------------------*/
+
+.container {
+    @include clearfix;
+    max-width: em(1100px);
+    margin: 0 auto;
+    padding: 0 $base-spacing-unit;
+}
+
+/*----------------------------------------------*\
+    Grid
+\*----------------------------------------------*/
+
+/**
+ * e.g.
+ * <div class="grid">
+ *     <div class="cell cell-6-12">
+ *         <p>.cell-6-12</p>
+ *     </div>
+ *     <div class="cell cell-6-12">
+ *         <p>.cell-6-12</p>
+ *     </div>
+ * </div>
+ */
+
+.grid {
+    @include clearfix;
+    margin-left: (-$base-spacing-unit*1.25);
+}
+
+/*----------------------------------------------*\
+    Grid Cells
+\*----------------------------------------------*/
+
+.cell {
+    float: left;
+    padding-left: ($base-spacing-unit*1.25);
+}
+
+/**
+ * Setup grid for layout
+ * @param {String} $namespace - Mofifier for viewport
+ * specific grids
+ */
+
+@mixin setup-grid($namespace: "") {
+    .cell-2-12#{$namespace}   { width: (2/12 * 100%);  }
+    .cell-3-12#{$namespace}   { width: (3/12 * 100%);  }
+    .cell-4-12#{$namespace}   { width: (4/12 * 100%);  }
+    .cell-6-12#{$namespace}   { width: (6/12 * 100%);  }
+    .cell-8-12#{$namespace}   { width: (8/12 * 100%);  }
+    .cell-10-12#{$namespace}   { width: (10/12 * 100%);  }
+    .cell-12-12#{$namespace}  { width: (12/12 * 100%); }
+}
+
+@include wider-than($width--desktop) {
+    @include setup-grid("--large");
+}
+
+@include wider-than($width--tablet-portrait) {
+    @include setup-grid("--medium");
+}
+
+@include wider-than($width--phone-portrait) {
+    @include setup-grid("--small");
+}

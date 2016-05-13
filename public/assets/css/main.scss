@@ -1,0 +1,58 @@
+/**
+* main.scss is reserved for imports only.
+* Styles are authored based on a SMACSS approach
+* (Scalable and Modular Architecture for CSS) and the
+* Think Brownstone Inc Development Standards:
+* https://bitbucket.org/thinkbrownstone/tbi_dev-standards/src
+*/
+
+/*----------------------------------------------*\
+    Settings
+\*----------------------------------------------*/
+
+/**
+ * Settings includes variables, mixins, and
+ * functions (preprocessor only).
+ */
+
+@import "includes/settings/forms";
+@import "includes/settings/mixins";
+@import "includes/settings/variables";
+
+/*----------------------------------------------*\
+    Base
+\*----------------------------------------------*/
+
+/**
+ * Base includes normalize, reset, universals (e.g. setting
+ * box-sizing globally), and base elements (unclassed HTML elements).
+ */
+
+@import "includes/base/normalize";
+@import "includes/base/reset";
+@import "includes/base/box-sizing";
+@import "includes/base/elements";
+@import "includes/base/forms";
+
+/*----------------------------------------------*\
+    Layout
+\*----------------------------------------------*/
+
+/**
+ * Layout includes containers, wrappers, grids and
+ * base page layout including header and footer.
+ */
+
+@import "includes/layout/grid";
+
+
+/*----------------------------------------------*\
+    Helper
+\*----------------------------------------------*/
+
+/**
+ * Generally applicable helper and state rules.
+ * These rules cannot be overwritten.
+ */
+
+@import "includes/helpers/accessibility";

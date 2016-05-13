@@ -1,0 +1,20 @@
+	<h2 class="tb-section">HTML Standards</h2>
+	<% for(var slug in public.rules.css._data){ %>
+		<% var rule = public.rules.css._data[slug]; %>
+		<% rule.yield = partial("./rules/css/" + "_" + slug); %>
+		<%- partial("./_shared/_rule", rule) %>
+	<% }; %>
+
+	<h2 class="tb-section">CSS Standards</h2>
+	<% for(var slug in public.rules.css._data){ %>
+		<% var rule = public.rules.css._data[slug]; %>
+		<% rule.yield = partial("./rules/css/" + "_" + slug); %>
+		<%- partial("./_shared/_rule", rule) %>
+	<% }; %>
+	
+	<h2 class="tb-section">JavaScript Standards</h2>
+	<% for(var slug in public.rules.css._data){ %>
+		<% var rule = public.rules.css._data[slug]; %>
+		<% rule.yield = partial("./rules/css/" + "_" + slug); %>
+		<%- partial("./_shared/_rule", rule) %>
+	<% }; %>

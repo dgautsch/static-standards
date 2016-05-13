@@ -1,0 +1,10 @@
+@mixin form-control-validation($color) {
+    .form-control {
+        border-color: $color;
+
+        &:focus {
+            outline: none;
+            border-color: $color;
+        }
+    }
+}

@@ -1,0 +1,103 @@
+/*----------------------------------------------*\
+    Fonts
+\*----------------------------------------------*/
+
+// Google Fonts
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
+$base-font-family: 'Lato', Helvetica, sans-serif;
+
+/*----------------------------------------------*\
+    Typescale
+\*----------------------------------------------*/
+
+$base-line-height: 1.5;
+
+$base-font-size: 16px;
+
+$h1-font-size: em(40px);
+$h2-font-size: em(20px);
+$h3-font-size: em(18px);
+$h4-font-size: em(18px);
+$h5-font-size: $base-font-size;
+$h6-font-size: $base-font-size;
+
+$primary-title-font-size: em(40px);
+$secondary-title-font-size: em(20px);
+$tertiary-title-font-size: em(18px);
+$quaternary-title-font-size: em(18px);
+
+/*----------------------------------------------*\
+    Font weights
+\*----------------------------------------------*/
+
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+$font-weight-ultra-bold: 900;
+
+/*----------------------------------------------*\
+    Colors
+\*----------------------------------------------*/
+
+$color--primary-text: #626264;
+$color--secondary-text: #878787;
+$color--tertiary-text: #626264;
+$color--quaternary-text: #9E9D9E;
+
+$color--primary-blue: #16C1F3;
+$color--secondary-blue: #0067B0;
+$color--tertiary-blue: #014254;
+
+$color--primary-gray: #F8F8F8;
+
+$color--primary-orange: #F69646;
+$color--secondary-orange: #503529;
+
+$color--white: #FFF;
+$color--black: #000;
+
+$gradient--footer: linear-gradient(#00BCE2, #04ACCE);
+$gradient--slab--secondary: linear-gradient(to bottom right, #F1F1F1 , $color--primary-gray);
+
+/*----------------------------------------------*\
+    Spacing
+\*----------------------------------------------*/
+
+$base-spacing-unit: $base-line-height * 1em !default;
+$half-spacing-unit: $base-spacing-unit / 2 * 1em !default;
+$quarter-spacing-unit: $base-spacing-unit / 4 * 1em!default;
+$line-height-ratio: $base-line-height;
+
+/*----------------------------------------------*\
+    Settings
+\*----------------------------------------------*/
+
+$width--phone-portrait: 420px;
+$width--phone-landscape: 600px;
+$width--tablet-portrait: 770px;
+$width--tablet-landscape: 960px;
+$width--desktop-small: 1000px;
+$width--desktop: 1200px;
+
+
+/*----------------------------------------------*\
+    Borders
+\*----------------------------------------------*/
+
+$base-radius: 2px;
+
+$base-button-border-radius: 2px;
+$base-button-border: 1px;
+
+/*----------------------------------------------*\
+    Transitions
+\*----------------------------------------------*/
+
+$base-transition: color 0.5s, background-color 0.5s;
+
+/*----------------------------------------------*\
+    Transparent backgrounds
+\*----------------------------------------------*/
+
+$background-transparent--primary: rgba(255, 255, 255, 0.8);
+$background-transparent--secondary: rgba(255, 255, 255, 0.4);

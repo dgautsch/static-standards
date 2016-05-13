@@ -1,0 +1,53 @@
+/*----------------------------------------------*\
+    Clearfix
+\*----------------------------------------------*/
+
+@mixin clearfix() {
+    &:after {
+        content:"";
+        display:table;
+        clear:both;
+    }
+}
+
+// This wider-than mixin will run through the above key value pairs and create our media queries.
+// Usage example:
+//
+// .selector {
+//		width: 100%;
+//
+//		@include wider-than(tablet-landscape) {
+//			width: 50%;
+//		}
+//	}
+// if selector is wider than the screensize we are calling
+@mixin wider-than($screen-size) {
+	// and if our map that we named $breakpoints includes values (we called them $screen-size)
+	@if $screen-size {
+		// then write out an inline Media Query that will target that value as our min-width
+		@media (min-width: $screen-size) {
+	  		// write CSS within this mixin that would apply to only this breakpoint or above
+				@content;
+		}
+	// if the screen-size we are requesting doesn't exist, then tell me when it is compiled
+	} @else {
+        // Debugging
+        @warn "[@mixin wider-than]: '#{$screen-size}' has not been declared as a breakpoint.";
+    }
+}
+
+// Inversion of above.
+@mixin narrower-than($screen-size) {
+	// and if our map that we named $breakpoints includes values (we called them $screen-size)
+	@if $screen-size {
+		@media (max-width: $screen-size) {
+	  			@content;
+		}
+	} @else {
+        @warn "[@mixin narrower-than]: '#{$screen-size}' has not been declared as a breakpoint.";
+    }
+}
+
+@function em($target, $context: $base-font-size) {
+  @return ($target / $context) * 1em;
+}
