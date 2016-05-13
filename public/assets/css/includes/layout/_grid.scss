@@ -3,9 +3,7 @@
 \*----------------------------------------------*/
 
 .container {
-    @include clearfix;
-    max-width: em(1100px);
-    margin: 0 auto;
+    margin: 0 2em;
     padding: 0 $base-spacing-unit;
 }
 
