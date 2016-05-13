@@ -1,0 +1,22 @@
+{
+    "nesting": {
+        "title": "SASS/LESS Preprocessor Nesting",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores dignissimos voluptatem, quae culpa quo repellendus fugit eos eaque commodi quasi mollitia necessitatibus odio cum nesciunt odit expedita architecto itaque dolore.",
+        "type": "css"
+    },
+    "specificity": {
+        "title": "CSS Specificity",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores dignissimos voluptatem, quae culpa quo repellendus fugit eos eaque commodi quasi mollitia necessitatibus odio cum nesciunt odit expedita architecto itaque dolore.",
+        "type": "css"
+    },
+    "attributes": {
+        "title": "HTML Attributes",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores dignissimos voluptatem, quae culpa quo repellendus fugit eos eaque commodi quasi mollitia necessitatibus odio cum nesciunt odit expedita architecto itaque dolore.",
+        "type": "html"
+    },
+    "semicolons": {
+        "title": "Rules for Semicolon Usage",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores dignissimos voluptatem, quae culpa quo repellendus fugit eos eaque commodi quasi mollitia necessitatibus odio cum nesciunt odit expedita architecto itaque dolore.",
+        "type": "javascript"
+    }
+}

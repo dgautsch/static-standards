@@ -1,0 +1,17 @@
+.rule {
+	display: flex;
+	flex-flow: row;
+	padding: 1em 0;
+	margin: 1em 0;
+	border-bottom: 1px solid #DEDEDE;
+	background: $color--primary-gray;
+	pre {
+		background: #FFF;
+		margin: 1em;
+	}
+}
+
+.rule-header,
+.rule-body {
+	flex: 50%
+}
