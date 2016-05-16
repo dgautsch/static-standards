@@ -2,6 +2,5 @@
 	<% for(var slug in public.rules._data){ %>
 		<% var rule = public.rules._data[slug]; %>
 		<% rule.yield = partial("./rules/" + rule.type + "/_" + slug); %>
-		<%- partial("./_shared/_rule", rule) %>
+		<%- partial("./_shared/_rule", {rule, slug}) %>
 	<% }; %>
-	

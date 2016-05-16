@@ -18,5 +18,10 @@
         "title": "Rules for Semicolon Usage",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores dignissimos voluptatem, quae culpa quo repellendus fugit eos eaque commodi quasi mollitia necessitatibus odio cum nesciunt odit expedita architecto itaque dolore.",
         "type": "javascript"
+    },
+    "objects": {
+        "title": "Objects",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores dignissimos voluptatem, quae culpa quo repellendus fugit eos eaque commodi quasi mollitia necessitatibus odio cum nesciunt odit expedita architecto itaque dolore.",
+        "type": "javascript"
     }
 }
