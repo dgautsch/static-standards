@@ -1,0 +1,26 @@
+.tbi-nav-menu {
+  li {
+    margin: 0.8em 0;
+    line-height: 1.5;
+  }
+  a {
+    color: $color--primary-text;
+    font-weight: $font-weight-light;
+  }
+  a:hover {
+    color: $color--black;
+    font-weight: $font-weight-normal;
+  }
+}
+
+.tbi-nav-marker {
+  a {
+    font-size: em(20px);
+    text-decoration: none;
+    text-transform: capitalize;
+  }
+  li {
+    font-size: em(12px);
+    margin: 0 0 0 1em;
+  }
+}

@@ -1,11 +1,29 @@
 <main class="container">
 	<%- partial('./_shared/_nav.ejs') %>
 	<div class="tbi-content">
-		<h2 class="tbi-section">Standards</h2>
+		<h2 class="tbi-section" id="javascript">JavaScript Standards</h2>
 		<% for(var slug in public.rules._data){ %>
-			<% var rule = public.rules._data[slug]; %>
-			<% rule.yield = partial("./rules/" + rule.type + "/_" + slug); %>
-			<%- partial("./_shared/_rule", {rule, slug}) %>
+			<% var rule = public.rules._data[slug], type = rule.type;%>
+			<% if (type === "javascript") {%>
+				<% rule.yield = partial("./rules/" + type + "/_" + slug); %>
+				<%- partial("./_shared/_rule", {rule, slug}) %>
+			<%}%>
 		<% }; %>
+		<h2 class="tbi-section" id="css">CSS Standards</h2>
+		<% for(var slug in public.rules._data){ %>
+			<% var rule = public.rules._data[slug], type = rule.type;%>
+			<% if (type === "css") {%>
+				<% rule.yield = partial("./rules/" + type + "/_" + slug); %>
+				<%- partial("./_shared/_rule", {rule, slug}) %>
+			<%}%>
+		<% }; %>
+		<h2 class="tbi-section" id="html">HTML Standards</h2>
+			<% for(var slug in public.rules._data){ %>
+				<% var rule = public.rules._data[slug], type = rule.type;%>
+				<% if (type === "html") {%>
+					<% rule.yield = partial("./rules/" + type + "/_" + slug); %>
+					<%- partial("./_shared/_rule", {rule, slug}) %>
+				<%}%>
+			<% }; %>
 	</div>
 </main>

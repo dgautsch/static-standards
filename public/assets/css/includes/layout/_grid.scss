@@ -4,8 +4,8 @@
 
 .wrapper {
   position: relative;
+  padding: 0 $base-spacing-unit;
   width: 100%;
-  margin: 0 2em;
   transition: transform 0.4s;
 }
 
@@ -25,11 +25,13 @@ footer {
 }
 
 .tbi-navigation {
+	width: 20%;
   flex: 1 6 20%;
   order: 1
 }
 
 .tbi-content  {
+	width: 80%;
   flex: 1 6 80%;
   order: 2
 }

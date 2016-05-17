@@ -1,4 +1,5 @@
 .rule {
+	overflow: hidden;
 	display: flex;
 	flex-flow: row;
 	padding: 1em;
@@ -11,8 +12,15 @@
 	}
 }
 
-.rule-header,
+.rule-header {
+	width: 40%;
+  flex: 1 6 40%;
+	flex-shrink: 0;
+	padding: 1em;
+}
 .rule-body {
-	flex: 50%;
-	padding: 1em
+	width: 60%;
+  flex: 1 6 60%;
+	flex-shrink: 0;
+	padding: 1em;
 }

@@ -1,8 +1,32 @@
 <nav class="tbi-navigation">
   <ul class="tbi-nav-menu">
-    <li><a href="#top">Home</a></li>
+    <li class="tbi-nav-marker"><a href="#top">Home</a></li>
+    <li class="tbi-nav-marker"><a href="#javascript">JavaScript</a>
+    <ul>
   	<% for(var slug in public.rules._data){ %>
-    <li><a href="#<%-slug%>"><%-slug%></a></li>
+      <% var rule = public.rules._data[slug] %>
+      <% if(rule.type === "javascript") {%>
+      <li><a href="#<%-slug%>"><%-slug%></a></li>
+      <%}%>
     <%};%>
+    </ul></li>
+    <li class="tbi-nav-marker"><a href="#css">CSS</a>
+    <ul>
+  	<% for(var slug in public.rules._data){ %>
+      <% var rule = public.rules._data[slug] %>
+      <% if(rule.type === "css") {%>
+      <li><a href="#<%-slug%>"><%-slug%></a></li>
+      <%}%>
+    <%};%>
+    </ul></li>
+    <li class="tbi-nav-marker"><a href="#html">HTML</a>
+    <ul>
+  	<% for(var slug in public.rules._data){ %>
+      <% var rule = public.rules._data[slug] %>
+      <% if(rule.type === "html") {%>
+      <li><a href="#<%-slug%>"><%-slug%></a></li>
+      <%}%>
+    <%};%>
+    </ul></li>
   </ul>
 </nav>
