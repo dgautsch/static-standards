@@ -1,6 +1,6 @@
 var TBI = TBI || {}
 
-;(function (TBI) {
+;(function (TBI, $) {
   var smoothScroll = (function () {
     // Animate smooth page scroll to anchor on same page
     // <a href="#target"></a> ... <div id="target"></div>
@@ -31,11 +31,33 @@ var TBI = TBI || {}
   })()
 
   TBI.smoothScroll = smoothScroll
-})(TBI)
+
+  var copyPermalink = (function () {
+    var init = function () {
+      var $permaLink = $('.tbi-permalink')
+
+      $permaLink.on('click', function (event) {
+        try {
+          var successful = document.execCommand('createLink', false, this.href)
+          var msg = successful ? 'successful' : 'unsuccessful'
+          console.log('Copying text command was ' + msg)
+        } catch (err) {
+          console.log('Oops, unable to copy')
+        }
+      })
+    }
+    return {
+      init: init
+    }
+  })()
+
+  TBI.copyPermalink = copyPermalink
+})(TBI, jQuery)
 
 $(document).on('ready', function () {
   var $scrollIdentifier = $('.tbi-nav-menu li a')
   $scrollIdentifier.each(function () {
     TBI.smoothScroll.scroll(this)
   })
+  TBI.copyPermalink.init()
 })

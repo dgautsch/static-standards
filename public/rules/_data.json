@@ -38,5 +38,50 @@
         "title": "Objects",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores dignissimos voluptatem, quae culpa quo repellendus fugit eos eaque commodi quasi mollitia necessitatibus odio cum nesciunt odit expedita architecto itaque dolore.",
         "type": "javascript"
+    },
+    "functions": {
+        "title": "Functions and Authoring Best Practices",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores dignissimos voluptatem, quae culpa quo repellendus fugit eos eaque commodi quasi mollitia necessitatibus odio cum nesciunt odit expedita architecto itaque dolore.",
+        "type": "javascript"
+    },
+    "variables": {
+        "title": "Authoring Variables",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores dignissimos voluptatem, quae culpa quo repellendus fugit eos eaque commodi quasi mollitia necessitatibus odio cum nesciunt odit expedita architecto itaque dolore.",
+        "type": "javascript"
+    },
+    "operators": {
+        "title": "Comparison Operators & Equality",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores dignissimos voluptatem, quae culpa quo repellendus fugit eos eaque commodi quasi mollitia necessitatibus odio cum nesciunt odit expedita architecto itaque dolore.",
+        "type": "javascript"
+    },
+    "blocks": {
+        "title": "Block Statements: Switches, Conditionals, and Loops",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores dignissimos voluptatem, quae culpa quo repellendus fugit eos eaque commodi quasi mollitia necessitatibus odio cum nesciunt odit expedita architecto itaque dolore.",
+        "type": "javascript"
+    },
+    "comments": {
+        "title": "How to write comments",
+        "description": "Be generous with comments, but make them meaningful. It is useful to leave information that will be read at a later time by people (possibly yourself) who will need to understand what you have done. The comments should be well-written and clear, just like the code they are annotating. An occasional nugget of humor might be appreciated. Frustrations and resentments will not. Inappropriate language should never be used. Even though comments are stripped by compression, it is far too easy for uncompressed code to be viewed by third parties and users.",
+        "type": "javascript"
+    },
+    "whitespace": {
+        "title": "Usage of Whitespace",
+        "description": "Blank lines improve readability by setting off sections of code that are logically related.",
+        "type": "javascript"
+    },
+    "commas": {
+        "title": "Usage of Commas",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores dignissimos voluptatem, quae culpa quo repellendus fugit eos eaque commodi quasi mollitia necessitatibus odio cum nesciunt odit expedita architecto itaque dolore.",
+        "type": "javascript"
+    },
+    "type": {
+        "title": "Type Casting & Coercion",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores dignissimos voluptatem, quae culpa quo repellendus fugit eos eaque commodi quasi mollitia necessitatibus odio cum nesciunt odit expedita architecto itaque dolore.",
+        "type": "javascript"
+    },
+    "naming": {
+        "title": "Naming Conventions",
+        "description": "Be cognizant of what you name your varialbes in functions. These guidelines will help keep your work consistent.",
+        "type": "javascript"
     }
 }

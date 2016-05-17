@@ -25,15 +25,17 @@ footer {
 }
 
 .tbi-navigation {
-	width: 20%;
-  flex: 1 6 20%;
-  order: 1
+  display: none;
+  @include wider-than($width--phone-landscape) {
+    display: block;
+  	width: 15%;
+    flex: 1 6 20%;
+  }
 }
 
 .tbi-content  {
-	width: 80%;
+	width: 85%;
   flex: 1 6 80%;
-  order: 2
 }
 
 .tbi-nav-menu {

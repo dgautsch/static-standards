@@ -13,16 +13,20 @@
 }
 
 .rule-header {
-	width: 40%;
-  flex: 1 6 40%;
-	flex-shrink: 0;
+	width: 30%;
+  flex: 1 6 30%;
 	padding: 0 1em;
 	margin: 0;
+	h3 {
+		font-size: $h3-font-size
+	}
 }
 
 .rule-body {
-	width: 60%;
-  flex: 1 6 60%;
-	flex-shrink: 0;
+	width: 70%;
+  flex: 1 6 70%;
 	padding: 0 1em;
+	ul {
+		margin: 0 0 2em 2em;
+	}
 }

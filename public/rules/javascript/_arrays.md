@@ -1,4 +1,4 @@
-## Arrays
+#### Arrays
 
 Use the literal syntax for array creation.
 
