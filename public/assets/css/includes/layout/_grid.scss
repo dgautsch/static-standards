@@ -2,10 +2,47 @@
     Container
 \*----------------------------------------------*/
 
-.container {
-    margin: 0 2em;
-    padding: 0 $base-spacing-unit;
+.wrapper {
+  position: relative;
+  width: 100%;
+  margin: 0 2em;
+  transition: transform 0.4s;
 }
+
+.container {
+  padding: 0 $base-spacing-unit;
+  display: flex;
+  flex-flow: row;
+}
+
+/*----------------------------------------------*\
+    Layout
+\*----------------------------------------------*/
+
+header,
+footer {
+  display: block;
+}
+
+.tbi-navigation {
+  flex: 1 6 20%;
+  order: 1
+}
+
+.tbi-content  {
+  flex: 1 6 80%;
+  order: 2
+}
+
+.tbi-nav-menu {
+  position: fixed;
+  li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
 
 /*----------------------------------------------*\
     Grid
@@ -26,41 +63,4 @@
 .grid {
     @include clearfix;
     margin-left: (-$base-spacing-unit*1.25);
-}
-
-/*----------------------------------------------*\
-    Grid Cells
-\*----------------------------------------------*/
-
-.cell {
-    float: left;
-    padding-left: ($base-spacing-unit*1.25);
-}
-
-/**
- * Setup grid for layout
- * @param {String} $namespace - Mofifier for viewport
- * specific grids
- */
-
-@mixin setup-grid($namespace: "") {
-    .cell-2-12#{$namespace}   { width: (2/12 * 100%);  }
-    .cell-3-12#{$namespace}   { width: (3/12 * 100%);  }
-    .cell-4-12#{$namespace}   { width: (4/12 * 100%);  }
-    .cell-6-12#{$namespace}   { width: (6/12 * 100%);  }
-    .cell-8-12#{$namespace}   { width: (8/12 * 100%);  }
-    .cell-10-12#{$namespace}   { width: (10/12 * 100%);  }
-    .cell-12-12#{$namespace}  { width: (12/12 * 100%); }
-}
-
-@include wider-than($width--desktop) {
-    @include setup-grid("--large");
-}
-
-@include wider-than($width--tablet-portrait) {
-    @include setup-grid("--medium");
-}
-
-@include wider-than($width--phone-portrait) {
-    @include setup-grid("--small");
 }

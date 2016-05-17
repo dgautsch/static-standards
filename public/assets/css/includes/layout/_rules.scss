@@ -1,7 +1,7 @@
 .rule {
 	display: flex;
 	flex-flow: row;
-	padding: 1em 0;
+	padding: 1em;
 	margin: 1em 0;
 	border-bottom: 1px solid #DEDEDE;
 	background: $color--primary-gray;
@@ -13,5 +13,6 @@
 
 .rule-header,
 .rule-body {
-	flex: 50%
+	flex: 50%;
+	padding: 1em
 }

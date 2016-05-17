@@ -1,6 +1,11 @@
-	<h2 class="tb-section">Standards</h2>
-	<% for(var slug in public.rules._data){ %>
-		<% var rule = public.rules._data[slug]; %>
-		<% rule.yield = partial("./rules/" + rule.type + "/_" + slug); %>
-		<%- partial("./_shared/_rule", {rule, slug}) %>
-	<% }; %>
+<main class="container">
+	<%- partial('./_shared/_nav.ejs') %>
+	<div class="tbi-content">
+		<h2 class="tbi-section">Standards</h2>
+		<% for(var slug in public.rules._data){ %>
+			<% var rule = public.rules._data[slug]; %>
+			<% rule.yield = partial("./rules/" + rule.type + "/_" + slug); %>
+			<%- partial("./_shared/_rule", {rule, slug}) %>
+		<% }; %>
+	</div>
+</main>

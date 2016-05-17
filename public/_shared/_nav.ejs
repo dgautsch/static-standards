@@ -1,1 +1,8 @@
-<nav>Navigation</nav>
+<nav class="tbi-navigation">
+  <ul class="tbi-nav-menu">
+    <li><a href="#top">Home</a></li>
+  	<% for(var slug in public.rules._data){ %>
+    <li><a href="#<%-slug%>"><%-slug%></a></li>
+    <%};%>
+  </ul>
+</nav>
