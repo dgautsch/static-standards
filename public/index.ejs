@@ -1,6 +1,9 @@
 <main class="container">
 	<%- partial('./_shared/_nav.ejs') %>
 	<div class="tbi-content">
+		<header>
+			<h1 class="tbi-site-title"><%= title %></h1>
+		</header>
 		<h2 class="tbi-section" id="javascript">JavaScript Standards</h2>
 		<% for(var slug in public.rules._data){ %>
 			<% var rule = public.rules._data[slug], type = rule.type;%>

@@ -5,7 +5,7 @@
   "private": "true",
   "scripts": {
     "start": "harp server",
-    "dev": "harp server & browser-sync start --proxy 'localhost:9000' --files '**/*.ejs, **/*.js, **/*.scss'",
+    "dev": "harp server & browser-sync start --config bs-config.js",
     "test": "npm test"
   },
   "repository": {
