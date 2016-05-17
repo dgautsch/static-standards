@@ -2,7 +2,7 @@
   "name": "static-standards",
   "version": "1.0.0",
   "description": "A HarpJS static site generator built to output development guidelines.",
-  "main": "index.js",
+  "private": "true",
   "scripts": {
     "start": "harp server",
     "dev": "harp server & browser-sync start --proxy 'localhost:9000' --files '**/*.ejs, **/*.js, **/*.css'",
