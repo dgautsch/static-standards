@@ -83,5 +83,15 @@
         "title": "Naming Conventions",
         "description": "Be cognizant of what you name your varialbes in functions. These guidelines will help keep your work consistent.",
         "type": "javascript"
+    },
+    "constructors": {
+        "title": "Constructors",
+        "description": "Assign methods to the prototype object, instead of overwriting the prototype with a new object. Overwriting the prototype makes inheritance impossible: by resetting the prototype you'll overwrite the base!",
+        "type": "javascript"
+    },
+    "performance": {
+        "title": "Performance and Miscellaneous Guidelines",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores dignissimos voluptatem, quae culpa quo repellendus fugit eos eaque commodi quasi mollitia necessitatibus odio cum nesciunt odit expedita architecto itaque dolore.",
+        "type": "javascript"
     }
 }
