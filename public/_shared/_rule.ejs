@@ -1,7 +1,7 @@
 <article class="rule rule-<%= rule.type %>" id="<%= slug %>">
   <header class="rule-header">
     <h3><%= rule.title %></h3>
-    <p><%= rule.description %></p>
+    <p><%= rule.description %> | <a href="#<%= slug %>" class="tbi-permalink" title="Permalink">&#128279;</a></p>
   </header>
   <div class="rule-body">
     <%- rule.yield %>
