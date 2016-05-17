@@ -1,4 +1,19 @@
 {
+    "types": {
+        "title": "Types: Primitives and Complex",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores dignissimos voluptatem, quae culpa quo repellendus fugit eos eaque commodi quasi mollitia necessitatibus odio cum nesciunt odit expedita architecto itaque dolore.",
+        "type": "javascript"
+    },
+    "arrays": {
+        "title": "Arrays",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores dignissimos voluptatem, quae culpa quo repellendus fugit eos eaque commodi quasi mollitia necessitatibus odio cum nesciunt odit expedita architecto itaque dolore.",
+        "type": "javascript"
+    },
+    "strings": {
+        "title": "Strings",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores dignissimos voluptatem, quae culpa quo repellendus fugit eos eaque commodi quasi mollitia necessitatibus odio cum nesciunt odit expedita architecto itaque dolore.",
+        "type": "javascript"
+    },
     "nesting": {
         "title": "SASS/LESS Preprocessor Nesting",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores dignissimos voluptatem, quae culpa quo repellendus fugit eos eaque commodi quasi mollitia necessitatibus odio cum nesciunt odit expedita architecto itaque dolore.",
