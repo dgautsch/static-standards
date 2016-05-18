@@ -1,3 +1,12 @@
+.tbi-navigation {
+  display: none;
+  @include wider-than($width--tablet-portrait) {
+    display: block;
+  	width: 15%;
+    flex: 1 6 20%;
+  }
+}
+
 .tbi-nav-menu {
   li {
     margin: 0.8em 0;

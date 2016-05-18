@@ -2,6 +2,7 @@
 	overflow: hidden;
 	display: flex;
 	flex-flow: row;
+	flex-wrap: wrap;
 	padding: 1em;
 	margin: 1em 0;
 	border-bottom: 1px solid #DEDEDE;
@@ -20,6 +21,11 @@
 	h3 {
 		font-size: $h3-font-size
 	}
+	@include narrower-than($width--tablet-portrait) {
+		width: 100%;
+	  flex: 0 0 100%;
+		order: 1
+	}
 }
 
 .rule-body {
@@ -28,5 +34,10 @@
 	padding: 0 1em;
 	ul {
 		margin: 0 0 2em 2em;
+	}
+	@include narrower-than($width--tablet-portrait) {
+		width: 100%;
+	  flex: 0 0 100%;
+		order: 2
 	}
 }

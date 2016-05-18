@@ -10,9 +10,12 @@
 }
 
 .container {
-  padding: 0 $base-spacing-unit;
+  padding: 0;
   display: flex;
   flex-flow: row;
+  @include wider-than($width--tablet-portrait) {
+    padding: 0 $base-spacing-unit;
+  }
 }
 
 /*----------------------------------------------*\
@@ -22,15 +25,6 @@
 header,
 footer {
   display: block;
-}
-
-.tbi-navigation {
-  display: none;
-  @include wider-than($width--phone-landscape) {
-    display: block;
-  	width: 15%;
-    flex: 1 6 20%;
-  }
 }
 
 .tbi-content  {

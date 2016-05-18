@@ -1,10 +1,20 @@
 .tbi-site-title {
-  font-size: $h1-font-size;
-  font-weight: $font-weight-light;
-}
-.tbi-section {
   font-size: $h2-font-size;
   font-weight: $font-weight-light;
+  text-align: center;
+  @include wider-than($width--tablet-portrait) {
+    font-size: $h1-font-size;
+    text-align: left;
+  }
+}
+.tbi-section {
+  font-size: $h3-font-size;
+  font-weight: $font-weight-light;
+  text-align: center;
+  @include wider-than($width--tablet-portrait) {
+    font-size: $h2-font-size;
+    text-align: left;
+  }
 }
 .tbi-footer-heading {
   font-size: $h4-font-size;
