@@ -1,3 +1,3 @@
-# Think Brownstone Development Standards
+# A Static Site Generator to Document Coding Standards
 
-This is a guide to the TBI Dev Standards. The full standards can be found on BitBucket.
+This documents coding standards for your organization with HarpJS.
